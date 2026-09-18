@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router";
 const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="h-14 flex items-center justify-between px-5">
+      <nav className="h-14 flex items-center justify-between px-5 shadow">
         <div className="flex items-center gap-2">
           <span className="font-bold">Countries of the World</span>
         </div>
@@ -31,7 +31,7 @@ const Layout = () => {
           </NavLink>
         </div>
       </nav>
-      <main className="flex-1 p-3">
+      <main className="flex-1 p-6">
         <Outlet />
       </main>
     </div>
